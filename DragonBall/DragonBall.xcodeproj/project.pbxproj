@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8581FA369B4B4DC589285B27 /* Pods_DragonBall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74EB401701FACE33F061E9D /* Pods_DragonBall.framework */; };
 		F20C8A4D269FEBEC00514057 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C8A4C269FEBEC00514057 /* AppDelegate.swift */; };
 		F20C8A4F269FEBEC00514057 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C8A4E269FEBEC00514057 /* SceneDelegate.swift */; };
 		F20C8A51269FEBEC00514057 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C8A50269FEBEC00514057 /* ViewController.swift */; };
@@ -49,9 +50,58 @@
 		F20C8ADC26A0CE4400514057 /* DBQuotationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C8AD626A0CE4400514057 /* DBQuotationInteractor.swift */; };
 		F20C8ADD26A0CE4400514057 /* DBQuotationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C8AD726A0CE4400514057 /* DBQuotationProtocol.swift */; };
 		F20C8ADE26A0CE4400514057 /* DBQuotationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C8AD826A0CE4400514057 /* DBQuotationVC.swift */; };
+		F23FB98626A146B100E14D1E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F23FB98526A146B100E14D1E /* GoogleService-Info.plist */; };
+		F23FB9BD26A15B5700E14D1E /* StructsCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FB9BC26A15B5700E14D1E /* StructsCodable.swift */; };
+		F23FBA0926A60C7400E14D1E /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FBA0826A60C7400E14D1E /* FirebaseAuthManager.swift */; };
+		F23FBA7626A7F7C800E14D1E /* ATCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FBA4D26A7F7C700E14D1E /* ATCTextField.swift */; };
+		F23FBA7726A7F7C800E14D1E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FBA4E26A7F7C700E14D1E /* UIColor.swift */; };
+		F23FBA7826A7F7C800E14D1E /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FBA4F26A7F7C700E14D1E /* UITextField.swift */; };
+		F23FBA7926A7F7C800E14D1E /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FBA5026A7F7C700E14D1E /* UIButton.swift */; };
+		F23FBA7A26A7F7C800E14D1E /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FBA5126A7F7C700E14D1E /* UIImage.swift */; };
+		F23FBA7B26A7F7C800E14D1E /* DBLoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FBA5426A7F7C700E14D1E /* DBLoginPresenter.swift */; };
+		F23FBA7C26A7F7C800E14D1E /* DBLoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FBA5626A7F7C700E14D1E /* DBLoginProtocol.swift */; };
+		F23FBA7D26A7F7C800E14D1E /* DBLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F23FBA5826A7F7C700E14D1E /* DBLoginVC.xib */; };
+		F23FBA7E26A7F7C800E14D1E /* DBLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FBA5926A7F7C800E14D1E /* DBLoginVC.swift */; };
+		F23FBA7F26A7F7C800E14D1E /* DBLoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FBA5B26A7F7C800E14D1E /* DBLoginInteractor.swift */; };
+		F23FBA8026A7F7C800E14D1E /* DBLoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FBA5D26A7F7C800E14D1E /* DBLoginRouter.swift */; };
+		F23FBA8126A7F7C800E14D1E /* DBLandingScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FBA6026A7F7C800E14D1E /* DBLandingScreenPresenter.swift */; };
+		F23FBA8226A7F7C800E14D1E /* DBLandingScreenProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FBA6226A7F7C800E14D1E /* DBLandingScreenProtocol.swift */; };
+		F23FBA8326A7F7C800E14D1E /* DBLandingScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F23FBA6426A7F7C800E14D1E /* DBLandingScreenVC.xib */; };
+		F23FBA8426A7F7C800E14D1E /* DBLandingScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FBA6526A7F7C800E14D1E /* DBLandingScreenVC.swift */; };
+		F23FBA8526A7F7C800E14D1E /* DBLandingScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FBA6726A7F7C800E14D1E /* DBLandingScreenInteractor.swift */; };
+		F23FBA8626A7F7C800E14D1E /* DBLandingScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FBA6926A7F7C800E14D1E /* DBLandingScreenRouter.swift */; };
+		F23FBA8726A7F7C800E14D1E /* DBSignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FBA6C26A7F7C800E14D1E /* DBSignUpPresenter.swift */; };
+		F23FBA8826A7F7C800E14D1E /* DBSignUpProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FBA6E26A7F7C800E14D1E /* DBSignUpProtocol.swift */; };
+		F23FBA8926A7F7C800E14D1E /* DBSignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F23FBA7026A7F7C800E14D1E /* DBSignUpVC.xib */; };
+		F23FBA8A26A7F7C800E14D1E /* DBSignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FBA7126A7F7C800E14D1E /* DBSignUpVC.swift */; };
+		F23FBA8B26A7F7C800E14D1E /* DBSignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FBA7326A7F7C800E14D1E /* DBSignUpInteractor.swift */; };
+		F23FBA8C26A7F7C800E14D1E /* DBSignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FBA7526A7F7C800E14D1E /* DBSignUpRouter.swift */; };
+		F243CA6C26B22659008BB63A /* ImageBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F243CA6B26B22659008BB63A /* ImageBarButton.swift */; };
+		F253C67426BB44AE003FA5F1 /* DBUsersEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253C67326BB44AE003FA5F1 /* DBUsersEntity.swift */; };
+		F253C71C26C1E3E3003FA5F1 /* DBProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F253C71626C1E3E3003FA5F1 /* DBProfileVC.xib */; };
+		F253C71D26C1E3E3003FA5F1 /* DBProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253C71726C1E3E3003FA5F1 /* DBProfilePresenter.swift */; };
+		F253C71E26C1E3E3003FA5F1 /* DBProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253C71826C1E3E3003FA5F1 /* DBProfileRouter.swift */; };
+		F253C71F26C1E3E3003FA5F1 /* DBProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253C71926C1E3E3003FA5F1 /* DBProfileInteractor.swift */; };
+		F253C72026C1E3E3003FA5F1 /* DBProfileProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253C71A26C1E3E3003FA5F1 /* DBProfileProtocol.swift */; };
+		F253C72126C1E3E3003FA5F1 /* DBProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253C71B26C1E3E3003FA5F1 /* DBProfileVC.swift */; };
+		F253C74326C3464C003FA5F1 /* DBListSalesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F253C73D26C3464C003FA5F1 /* DBListSalesVC.xib */; };
+		F253C74426C3464C003FA5F1 /* DBListSalesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253C73E26C3464C003FA5F1 /* DBListSalesPresenter.swift */; };
+		F253C74526C3464C003FA5F1 /* DBListSalesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253C73F26C3464C003FA5F1 /* DBListSalesRouter.swift */; };
+		F253C74626C3464C003FA5F1 /* DBListSalesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253C74026C3464C003FA5F1 /* DBListSalesInteractor.swift */; };
+		F253C74726C3464C003FA5F1 /* DBListSalesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253C74126C3464C003FA5F1 /* DBListSalesProtocol.swift */; };
+		F253C74826C3464C003FA5F1 /* DBListSalesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253C74226C3464C003FA5F1 /* DBListSalesVC.swift */; };
+		F253C75026C346A4003FA5F1 /* DBAddSaleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F253C74A26C346A4003FA5F1 /* DBAddSaleVC.xib */; };
+		F253C75126C346A4003FA5F1 /* DBAddSalePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253C74B26C346A4003FA5F1 /* DBAddSalePresenter.swift */; };
+		F253C75226C346A4003FA5F1 /* DBAddSaleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253C74C26C346A4003FA5F1 /* DBAddSaleRouter.swift */; };
+		F253C75326C346A4003FA5F1 /* DBAddSaleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253C74D26C346A4003FA5F1 /* DBAddSaleInteractor.swift */; };
+		F253C75426C346A4003FA5F1 /* DBAddSaleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253C74E26C346A4003FA5F1 /* DBAddSaleProtocol.swift */; };
+		F253C75526C346A4003FA5F1 /* DBAddSaleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253C74F26C346A4003FA5F1 /* DBAddSaleVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3AA1F2634983A918FD1BEFE1 /* Pods-DragonBall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DragonBall.debug.xcconfig"; path = "Target Support Files/Pods-DragonBall/Pods-DragonBall.debug.xcconfig"; sourceTree = "<group>"; };
+		A74EB401701FACE33F061E9D /* Pods_DragonBall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DragonBall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA60254B4140FA3DDB51D673 /* Pods-DragonBall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DragonBall.release.xcconfig"; path = "Target Support Files/Pods-DragonBall/Pods-DragonBall.release.xcconfig"; sourceTree = "<group>"; };
 		F20C8A49269FEBEC00514057 /* DragonBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20C8A4C269FEBEC00514057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F20C8A4E269FEBEC00514057 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +146,52 @@
 		F20C8AD626A0CE4400514057 /* DBQuotationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBQuotationInteractor.swift; sourceTree = "<group>"; };
 		F20C8AD726A0CE4400514057 /* DBQuotationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBQuotationProtocol.swift; sourceTree = "<group>"; };
 		F20C8AD826A0CE4400514057 /* DBQuotationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBQuotationVC.swift; sourceTree = "<group>"; };
+		F23FB98526A146B100E14D1E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F23FB9BC26A15B5700E14D1E /* StructsCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructsCodable.swift; sourceTree = "<group>"; };
+		F23FBA0826A60C7400E14D1E /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
+		F23FBA4D26A7F7C700E14D1E /* ATCTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCTextField.swift; sourceTree = "<group>"; };
+		F23FBA4E26A7F7C700E14D1E /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		F23FBA4F26A7F7C700E14D1E /* UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		F23FBA5026A7F7C700E14D1E /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		F23FBA5126A7F7C700E14D1E /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		F23FBA5426A7F7C700E14D1E /* DBLoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBLoginPresenter.swift; sourceTree = "<group>"; };
+		F23FBA5626A7F7C700E14D1E /* DBLoginProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBLoginProtocol.swift; sourceTree = "<group>"; };
+		F23FBA5826A7F7C700E14D1E /* DBLoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DBLoginVC.xib; sourceTree = "<group>"; };
+		F23FBA5926A7F7C800E14D1E /* DBLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBLoginVC.swift; sourceTree = "<group>"; };
+		F23FBA5B26A7F7C800E14D1E /* DBLoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBLoginInteractor.swift; sourceTree = "<group>"; };
+		F23FBA5D26A7F7C800E14D1E /* DBLoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBLoginRouter.swift; sourceTree = "<group>"; };
+		F23FBA6026A7F7C800E14D1E /* DBLandingScreenPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBLandingScreenPresenter.swift; sourceTree = "<group>"; };
+		F23FBA6226A7F7C800E14D1E /* DBLandingScreenProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBLandingScreenProtocol.swift; sourceTree = "<group>"; };
+		F23FBA6426A7F7C800E14D1E /* DBLandingScreenVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DBLandingScreenVC.xib; sourceTree = "<group>"; };
+		F23FBA6526A7F7C800E14D1E /* DBLandingScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBLandingScreenVC.swift; sourceTree = "<group>"; };
+		F23FBA6726A7F7C800E14D1E /* DBLandingScreenInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBLandingScreenInteractor.swift; sourceTree = "<group>"; };
+		F23FBA6926A7F7C800E14D1E /* DBLandingScreenRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBLandingScreenRouter.swift; sourceTree = "<group>"; };
+		F23FBA6C26A7F7C800E14D1E /* DBSignUpPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBSignUpPresenter.swift; sourceTree = "<group>"; };
+		F23FBA6E26A7F7C800E14D1E /* DBSignUpProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBSignUpProtocol.swift; sourceTree = "<group>"; };
+		F23FBA7026A7F7C800E14D1E /* DBSignUpVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DBSignUpVC.xib; sourceTree = "<group>"; };
+		F23FBA7126A7F7C800E14D1E /* DBSignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBSignUpVC.swift; sourceTree = "<group>"; };
+		F23FBA7326A7F7C800E14D1E /* DBSignUpInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBSignUpInteractor.swift; sourceTree = "<group>"; };
+		F23FBA7526A7F7C800E14D1E /* DBSignUpRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBSignUpRouter.swift; sourceTree = "<group>"; };
+		F243CA6B26B22659008BB63A /* ImageBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBarButton.swift; sourceTree = "<group>"; };
+		F253C67326BB44AE003FA5F1 /* DBUsersEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBUsersEntity.swift; sourceTree = "<group>"; };
+		F253C71626C1E3E3003FA5F1 /* DBProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DBProfileVC.xib; sourceTree = "<group>"; };
+		F253C71726C1E3E3003FA5F1 /* DBProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBProfilePresenter.swift; sourceTree = "<group>"; };
+		F253C71826C1E3E3003FA5F1 /* DBProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBProfileRouter.swift; sourceTree = "<group>"; };
+		F253C71926C1E3E3003FA5F1 /* DBProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBProfileInteractor.swift; sourceTree = "<group>"; };
+		F253C71A26C1E3E3003FA5F1 /* DBProfileProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBProfileProtocol.swift; sourceTree = "<group>"; };
+		F253C71B26C1E3E3003FA5F1 /* DBProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBProfileVC.swift; sourceTree = "<group>"; };
+		F253C73D26C3464C003FA5F1 /* DBListSalesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DBListSalesVC.xib; sourceTree = "<group>"; };
+		F253C73E26C3464C003FA5F1 /* DBListSalesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBListSalesPresenter.swift; sourceTree = "<group>"; };
+		F253C73F26C3464C003FA5F1 /* DBListSalesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBListSalesRouter.swift; sourceTree = "<group>"; };
+		F253C74026C3464C003FA5F1 /* DBListSalesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBListSalesInteractor.swift; sourceTree = "<group>"; };
+		F253C74126C3464C003FA5F1 /* DBListSalesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBListSalesProtocol.swift; sourceTree = "<group>"; };
+		F253C74226C3464C003FA5F1 /* DBListSalesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBListSalesVC.swift; sourceTree = "<group>"; };
+		F253C74A26C346A4003FA5F1 /* DBAddSaleVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DBAddSaleVC.xib; sourceTree = "<group>"; };
+		F253C74B26C346A4003FA5F1 /* DBAddSalePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBAddSalePresenter.swift; sourceTree = "<group>"; };
+		F253C74C26C346A4003FA5F1 /* DBAddSaleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBAddSaleRouter.swift; sourceTree = "<group>"; };
+		F253C74D26C346A4003FA5F1 /* DBAddSaleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBAddSaleInteractor.swift; sourceTree = "<group>"; };
+		F253C74E26C346A4003FA5F1 /* DBAddSaleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBAddSaleProtocol.swift; sourceTree = "<group>"; };
+		F253C74F26C346A4003FA5F1 /* DBAddSaleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBAddSaleVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,17 +199,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8581FA369B4B4DC589285B27 /* Pods_DragonBall.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4835B205DA296F634706F3F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A74EB401701FACE33F061E9D /* Pods_DragonBall.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98964BBC12CA400C3E2FBDCD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AA1F2634983A918FD1BEFE1 /* Pods-DragonBall.debug.xcconfig */,
+				CA60254B4140FA3DDB51D673 /* Pods-DragonBall.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F20C8A40269FEBEC00514057 = {
 			isa = PBXGroup;
 			children = (
 				F20C8A4B269FEBEC00514057 /* DragonBall */,
 				F20C8A4A269FEBEC00514057 /* Products */,
+				98964BBC12CA400C3E2FBDCD /* Pods */,
+				4835B205DA296F634706F3F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,12 +244,18 @@
 		F20C8A4B269FEBEC00514057 /* DragonBall */ = {
 			isa = PBXGroup;
 			children = (
+				F23FBA5E26A7F7C800E14D1E /* LandingScreen */,
+				F23FBA6A26A7F7C800E14D1E /* SignUp */,
+				F23FBA5226A7F7C700E14D1E /* Login */,
+				F20C8A61269FED5F00514057 /* Home */,
+				F253C71526C1E3BF003FA5F1 /* Profile */,
 				F20C8A7B26A0CA7700514057 /* Shipping */,
 				F20C8A7A26A0CA2500514057 /* Quotation */,
 				F20C8A7926A0CA1A00514057 /* Warehouse */,
 				F20C8A7826A0CA0D00514057 /* Referral */,
 				F20C8A7726A0CA0500514057 /* Sales */,
-				F20C8A61269FED5F00514057 /* Home */,
+				F23FBA4C26A7F7C700E14D1E /* Controls */,
+				F23FBA0726A60C5C00E14D1E /* Firebase */,
 				F20C8A4C269FEBEC00514057 /* AppDelegate.swift */,
 				F20C8A4E269FEBEC00514057 /* SceneDelegate.swift */,
 				F20C8A50269FEBEC00514057 /* ViewController.swift */,
@@ -141,6 +263,7 @@
 				F20C8A55269FEBEE00514057 /* Assets.xcassets */,
 				F20C8A57269FEBEE00514057 /* LaunchScreen.storyboard */,
 				F20C8A5A269FEBEE00514057 /* Info.plist */,
+				F23FB98526A146B100E14D1E /* GoogleService-Info.plist */,
 			);
 			path = DragonBall;
 			sourceTree = "<group>";
@@ -148,6 +271,7 @@
 		F20C8A61269FED5F00514057 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				F23FB9BA26A15B1100E14D1E /* ExternalDataManager */,
 				F20C8A66269FED9500514057 /* View */,
 				F20C8A65269FED8B00514057 /* Pesenter */,
 				F20C8A63269FED7200514057 /* Interactor */,
@@ -201,11 +325,9 @@
 		F20C8A7726A0CA0500514057 /* Sales */ = {
 			isa = PBXGroup;
 			children = (
-				F20C8A8026A0CB2900514057 /* View */,
-				F20C8A7F26A0CB2200514057 /* Presenter */,
-				F20C8A7E26A0CB1C00514057 /* Interactor */,
-				F20C8A7D26A0CB1700514057 /* Protocol */,
-				F20C8A7C26A0CB0F00514057 /* Router */,
+				F253C72D26C3447B003FA5F1 /* ListSales */,
+				F253C72C26C3446F003FA5F1 /* AddSale */,
+				F253C72B26C34448003FA5F1 /* HomeSales */,
 			);
 			path = Sales;
 			sourceTree = "<group>";
@@ -463,6 +585,302 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F23FB9BA26A15B1100E14D1E /* ExternalDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				F23FB9BB26A15B4000E14D1E /* StructsCodable */,
+			);
+			path = ExternalDataManager;
+			sourceTree = "<group>";
+		};
+		F23FB9BB26A15B4000E14D1E /* StructsCodable */ = {
+			isa = PBXGroup;
+			children = (
+				F23FB9BC26A15B5700E14D1E /* StructsCodable.swift */,
+			);
+			path = StructsCodable;
+			sourceTree = "<group>";
+		};
+		F23FBA0726A60C5C00E14D1E /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				F23FBA0826A60C7400E14D1E /* FirebaseAuthManager.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		F23FBA4C26A7F7C700E14D1E /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				F243CA6B26B22659008BB63A /* ImageBarButton.swift */,
+				F23FBA4D26A7F7C700E14D1E /* ATCTextField.swift */,
+				F23FBA4E26A7F7C700E14D1E /* UIColor.swift */,
+				F23FBA4F26A7F7C700E14D1E /* UITextField.swift */,
+				F23FBA5026A7F7C700E14D1E /* UIButton.swift */,
+				F23FBA5126A7F7C700E14D1E /* UIImage.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		F23FBA5226A7F7C700E14D1E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F23FBA5726A7F7C700E14D1E /* View */,
+				F23FBA5326A7F7C700E14D1E /* Presenter */,
+				F23FBA5526A7F7C700E14D1E /* Protocol */,
+				F23FBA5A26A7F7C800E14D1E /* Interactor */,
+				F23FBA5C26A7F7C800E14D1E /* Router */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F23FBA5326A7F7C700E14D1E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F23FBA5426A7F7C700E14D1E /* DBLoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F23FBA5526A7F7C700E14D1E /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F23FBA5626A7F7C700E14D1E /* DBLoginProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		F23FBA5726A7F7C700E14D1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F23FBA5826A7F7C700E14D1E /* DBLoginVC.xib */,
+				F23FBA5926A7F7C800E14D1E /* DBLoginVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F23FBA5A26A7F7C800E14D1E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F23FBA5B26A7F7C800E14D1E /* DBLoginInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F23FBA5C26A7F7C800E14D1E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F23FBA5D26A7F7C800E14D1E /* DBLoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F23FBA5E26A7F7C800E14D1E /* LandingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F23FBA6326A7F7C800E14D1E /* View */,
+				F23FBA5F26A7F7C800E14D1E /* Presenter */,
+				F23FBA6126A7F7C800E14D1E /* Protocol */,
+				F23FBA6626A7F7C800E14D1E /* Interactor */,
+				F23FBA6826A7F7C800E14D1E /* Router */,
+			);
+			path = LandingScreen;
+			sourceTree = "<group>";
+		};
+		F23FBA5F26A7F7C800E14D1E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F23FBA6026A7F7C800E14D1E /* DBLandingScreenPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F23FBA6126A7F7C800E14D1E /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F23FBA6226A7F7C800E14D1E /* DBLandingScreenProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		F23FBA6326A7F7C800E14D1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F23FBA6426A7F7C800E14D1E /* DBLandingScreenVC.xib */,
+				F23FBA6526A7F7C800E14D1E /* DBLandingScreenVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F23FBA6626A7F7C800E14D1E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F23FBA6726A7F7C800E14D1E /* DBLandingScreenInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F23FBA6826A7F7C800E14D1E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F23FBA6926A7F7C800E14D1E /* DBLandingScreenRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F23FBA6A26A7F7C800E14D1E /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				F253C67126BB4480003FA5F1 /* Entity */,
+				F23FBA6F26A7F7C800E14D1E /* View */,
+				F23FBA6B26A7F7C800E14D1E /* Presenter */,
+				F23FBA6D26A7F7C800E14D1E /* Protocol */,
+				F23FBA7226A7F7C800E14D1E /* Interactor */,
+				F23FBA7426A7F7C800E14D1E /* Router */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		F23FBA6B26A7F7C800E14D1E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F23FBA6C26A7F7C800E14D1E /* DBSignUpPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F23FBA6D26A7F7C800E14D1E /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F23FBA6E26A7F7C800E14D1E /* DBSignUpProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		F23FBA6F26A7F7C800E14D1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F23FBA7026A7F7C800E14D1E /* DBSignUpVC.xib */,
+				F23FBA7126A7F7C800E14D1E /* DBSignUpVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F23FBA7226A7F7C800E14D1E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F23FBA7326A7F7C800E14D1E /* DBSignUpInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F23FBA7426A7F7C800E14D1E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F23FBA7526A7F7C800E14D1E /* DBSignUpRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F253C67126BB4480003FA5F1 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F253C67326BB44AE003FA5F1 /* DBUsersEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F253C71526C1E3BF003FA5F1 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F253C72826C1E426003FA5F1 /* View */,
+				F253C72526C1E3FF003FA5F1 /* Presenter */,
+				F253C72726C1E41B003FA5F1 /* Interactor */,
+				F253C72626C1E40A003FA5F1 /* Protocol */,
+				F253C72426C1E3EF003FA5F1 /* Router */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F253C72426C1E3EF003FA5F1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F253C71826C1E3E3003FA5F1 /* DBProfileRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F253C72526C1E3FF003FA5F1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F253C71726C1E3E3003FA5F1 /* DBProfilePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F253C72626C1E40A003FA5F1 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F253C71A26C1E3E3003FA5F1 /* DBProfileProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		F253C72726C1E41B003FA5F1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F253C71926C1E3E3003FA5F1 /* DBProfileInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F253C72826C1E426003FA5F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F253C71B26C1E3E3003FA5F1 /* DBProfileVC.swift */,
+				F253C71626C1E3E3003FA5F1 /* DBProfileVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F253C72B26C34448003FA5F1 /* HomeSales */ = {
+			isa = PBXGroup;
+			children = (
+				F20C8A8026A0CB2900514057 /* View */,
+				F20C8A7F26A0CB2200514057 /* Presenter */,
+				F20C8A7E26A0CB1C00514057 /* Interactor */,
+				F20C8A7D26A0CB1700514057 /* Protocol */,
+				F20C8A7C26A0CB0F00514057 /* Router */,
+			);
+			path = HomeSales;
+			sourceTree = "<group>";
+		};
+		F253C72C26C3446F003FA5F1 /* AddSale */ = {
+			isa = PBXGroup;
+			children = (
+				F253C74A26C346A4003FA5F1 /* DBAddSaleVC.xib */,
+				F253C74B26C346A4003FA5F1 /* DBAddSalePresenter.swift */,
+				F253C74C26C346A4003FA5F1 /* DBAddSaleRouter.swift */,
+				F253C74D26C346A4003FA5F1 /* DBAddSaleInteractor.swift */,
+				F253C74E26C346A4003FA5F1 /* DBAddSaleProtocol.swift */,
+				F253C74F26C346A4003FA5F1 /* DBAddSaleVC.swift */,
+			);
+			path = AddSale;
+			sourceTree = "<group>";
+		};
+		F253C72D26C3447B003FA5F1 /* ListSales */ = {
+			isa = PBXGroup;
+			children = (
+				F253C73D26C3464C003FA5F1 /* DBListSalesVC.xib */,
+				F253C73E26C3464C003FA5F1 /* DBListSalesPresenter.swift */,
+				F253C73F26C3464C003FA5F1 /* DBListSalesRouter.swift */,
+				F253C74026C3464C003FA5F1 /* DBListSalesInteractor.swift */,
+				F253C74126C3464C003FA5F1 /* DBListSalesProtocol.swift */,
+				F253C74226C3464C003FA5F1 /* DBListSalesVC.swift */,
+			);
+			path = ListSales;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -470,9 +888,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F20C8A5D269FEBEE00514057 /* Build configuration list for PBXNativeTarget "DragonBall" */;
 			buildPhases = (
+				7863697C5E8174538485B507 /* [CP] Check Pods Manifest.lock */,
 				F20C8A45269FEBEC00514057 /* Sources */,
 				F20C8A46269FEBEC00514057 /* Frameworks */,
 				F20C8A47269FEBEC00514057 /* Resources */,
+				4FF7DFE47FC8EB95FA9E6B4D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -520,54 +940,142 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F23FBA8326A7F7C800E14D1E /* DBLandingScreenVC.xib in Resources */,
 				F20C8A59269FEBEE00514057 /* LaunchScreen.storyboard in Resources */,
 				F20C8A6D269FEDAA00514057 /* DBHomeVC.xib in Resources */,
 				F20C8AB826A0CD3200514057 /* DBReferralVC.xib in Resources */,
+				F23FBA7D26A7F7C800E14D1E /* DBLoginVC.xib in Resources */,
+				F23FBA8926A7F7C800E14D1E /* DBSignUpVC.xib in Resources */,
 				F20C8AA926A0CD0800514057 /* DBWarehouseVC.xib in Resources */,
 				F20C8A9C26A0CC7200514057 /* DBShippingVC.xib in Resources */,
 				F20C8AC726A0CD5800514057 /* DBSalesVC.xib in Resources */,
+				F253C74326C3464C003FA5F1 /* DBListSalesVC.xib in Resources */,
 				F20C8A56269FEBEE00514057 /* Assets.xcassets in Resources */,
+				F23FB98626A146B100E14D1E /* GoogleService-Info.plist in Resources */,
 				F20C8AD926A0CE4400514057 /* DBQuotationVC.xib in Resources */,
+				F253C75026C346A4003FA5F1 /* DBAddSaleVC.xib in Resources */,
+				F253C71C26C1E3E3003FA5F1 /* DBProfileVC.xib in Resources */,
 				F20C8A54269FEBEC00514057 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4FF7DFE47FC8EB95FA9E6B4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DragonBall/Pods-DragonBall-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DragonBall/Pods-DragonBall-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DragonBall/Pods-DragonBall-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7863697C5E8174538485B507 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DragonBall-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F20C8A45269FEBEC00514057 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F23FBA7B26A7F7C800E14D1E /* DBLoginPresenter.swift in Sources */,
 				F20C8A9D26A0CC7200514057 /* DBShippingPresenter.swift in Sources */,
+				F23FBA8526A7F7C800E14D1E /* DBLandingScreenInteractor.swift in Sources */,
+				F253C75126C346A4003FA5F1 /* DBAddSalePresenter.swift in Sources */,
 				F20C8AA026A0CC7200514057 /* DBShippingProtocol.swift in Sources */,
+				F23FBA8726A7F7C800E14D1E /* DBSignUpPresenter.swift in Sources */,
+				F253C71E26C1E3E3003FA5F1 /* DBProfileRouter.swift in Sources */,
+				F253C72026C1E3E3003FA5F1 /* DBProfileProtocol.swift in Sources */,
+				F23FBA8226A7F7C800E14D1E /* DBLandingScreenProtocol.swift in Sources */,
 				F20C8A51269FEBEC00514057 /* ViewController.swift in Sources */,
 				F20C8ABA26A0CD3200514057 /* DBReferralRouter.swift in Sources */,
 				F20C8ADA26A0CE4400514057 /* DBQuotationPresenter.swift in Sources */,
+				F23FBA7826A7F7C800E14D1E /* UITextField.swift in Sources */,
+				F253C74626C3464C003FA5F1 /* DBListSalesInteractor.swift in Sources */,
 				F20C8A72269FEDAA00514057 /* DBHomeVC.swift in Sources */,
+				F253C74726C3464C003FA5F1 /* DBListSalesProtocol.swift in Sources */,
+				F253C74526C3464C003FA5F1 /* DBListSalesRouter.swift in Sources */,
+				F253C75526C346A4003FA5F1 /* DBAddSaleVC.swift in Sources */,
 				F20C8A4D269FEBEC00514057 /* AppDelegate.swift in Sources */,
 				F20C8ABC26A0CD3200514057 /* DBReferralProtocol.swift in Sources */,
+				F23FBA8626A7F7C800E14D1E /* DBLandingScreenRouter.swift in Sources */,
 				F20C8AAB26A0CD0800514057 /* DBWarehouseRouter.swift in Sources */,
+				F23FBA7F26A7F7C800E14D1E /* DBLoginInteractor.swift in Sources */,
 				F20C8A9F26A0CC7200514057 /* DBShippingInteractor.swift in Sources */,
+				F23FBA8C26A7F7C800E14D1E /* DBSignUpRouter.swift in Sources */,
 				F20C8A6F269FEDAA00514057 /* DBHomeRouter.swift in Sources */,
 				F20C8ADE26A0CE4400514057 /* DBQuotationVC.swift in Sources */,
+				F253C67426BB44AE003FA5F1 /* DBUsersEntity.swift in Sources */,
+				F23FBA8026A7F7C800E14D1E /* DBLoginRouter.swift in Sources */,
 				F20C8A71269FEDAA00514057 /* DBHomeProtocol.swift in Sources */,
 				F20C8ACB26A0CD5800514057 /* DBSalesProtocol.swift in Sources */,
+				F23FBA8826A7F7C800E14D1E /* DBSignUpProtocol.swift in Sources */,
+				F253C71F26C1E3E3003FA5F1 /* DBProfileInteractor.swift in Sources */,
+				F23FBA8426A7F7C800E14D1E /* DBLandingScreenVC.swift in Sources */,
+				F253C71D26C1E3E3003FA5F1 /* DBProfilePresenter.swift in Sources */,
+				F23FBA8B26A7F7C800E14D1E /* DBSignUpInteractor.swift in Sources */,
 				F20C8A9E26A0CC7200514057 /* DBShippingRouter.swift in Sources */,
 				F20C8ABB26A0CD3200514057 /* DBReferralInteractor.swift in Sources */,
+				F253C75326C346A4003FA5F1 /* DBAddSaleInteractor.swift in Sources */,
+				F23FBA7626A7F7C800E14D1E /* ATCTextField.swift in Sources */,
+				F23FBA8A26A7F7C800E14D1E /* DBSignUpVC.swift in Sources */,
+				F253C74826C3464C003FA5F1 /* DBListSalesVC.swift in Sources */,
+				F23FBA7E26A7F7C800E14D1E /* DBLoginVC.swift in Sources */,
 				F20C8AAC26A0CD0800514057 /* DBWarehouseInteractor.swift in Sources */,
 				F20C8ADD26A0CE4400514057 /* DBQuotationProtocol.swift in Sources */,
 				F20C8ABD26A0CD3200514057 /* DBReferralVC.swift in Sources */,
+				F23FBA7C26A7F7C800E14D1E /* DBLoginProtocol.swift in Sources */,
 				F20C8AC826A0CD5800514057 /* DBSalesPresenter.swift in Sources */,
+				F253C75426C346A4003FA5F1 /* DBAddSaleProtocol.swift in Sources */,
 				F20C8A4F269FEBEC00514057 /* SceneDelegate.swift in Sources */,
 				F20C8AAD26A0CD0800514057 /* DBWarehouseProtocol.swift in Sources */,
 				F20C8AC926A0CD5800514057 /* DBSalesRouter.swift in Sources */,
+				F23FBA7A26A7F7C800E14D1E /* UIImage.swift in Sources */,
 				F20C8ACA26A0CD5800514057 /* DBSalesInteractor.swift in Sources */,
 				F20C8ACC26A0CD5800514057 /* DBSalesVC.swift in Sources */,
+				F23FBA7726A7F7C800E14D1E /* UIColor.swift in Sources */,
+				F23FB9BD26A15B5700E14D1E /* StructsCodable.swift in Sources */,
 				F20C8ADB26A0CE4400514057 /* DBQuotationRouter.swift in Sources */,
 				F20C8ADC26A0CE4400514057 /* DBQuotationInteractor.swift in Sources */,
+				F243CA6C26B22659008BB63A /* ImageBarButton.swift in Sources */,
+				F253C74426C3464C003FA5F1 /* DBListSalesPresenter.swift in Sources */,
 				F20C8A6E269FEDAA00514057 /* DBHomePresenter.swift in Sources */,
+				F23FBA0926A60C7400E14D1E /* FirebaseAuthManager.swift in Sources */,
+				F253C72126C1E3E3003FA5F1 /* DBProfileVC.swift in Sources */,
+				F253C75226C346A4003FA5F1 /* DBAddSaleRouter.swift in Sources */,
 				F20C8A70269FEDAA00514057 /* DBHomeInteractor.swift in Sources */,
+				F23FBA8126A7F7C800E14D1E /* DBLandingScreenPresenter.swift in Sources */,
+				F23FBA7926A7F7C800E14D1E /* UIButton.swift in Sources */,
 				F20C8AAA26A0CD0800514057 /* DBWarehousePresenter.swift in Sources */,
 				F20C8AAE26A0CD0800514057 /* DBWarehouseVC.swift in Sources */,
 				F20C8AA126A0CC7200514057 /* DBShippingVC.swift in Sources */,
@@ -715,12 +1223,14 @@
 		};
 		F20C8A5E269FEBEE00514057 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA1F2634983A918FD1BEFE1 /* Pods-DragonBall.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ABJLZ98S9L;
 				INFOPLIST_FILE = DragonBall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -734,12 +1244,14 @@
 		};
 		F20C8A5F269FEBEE00514057 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA60254B4140FA3DDB51D673 /* Pods-DragonBall.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ABJLZ98S9L;
 				INFOPLIST_FILE = DragonBall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

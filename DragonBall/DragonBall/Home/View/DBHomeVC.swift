@@ -5,9 +5,11 @@
 //  Created by Juan Esquivel on 14/07/21.
 //  
 //
-
-import Foundation
 import UIKit
+import Foundation
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
 
 class DBHomeVC: UIViewController {
 
@@ -17,12 +19,75 @@ class DBHomeVC: UIViewController {
     @IBOutlet weak var btnQuotation: UIButton!
     @IBOutlet weak var btnShipping: UIButton!
     var presenter: DBHomePresenterProtocol?
-
+    var db: Firestore!
+    var ref: DocumentReference? = nil
+    var conection = UserSetFirestore()
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpFirestore()
         setUpView()
+        testFirestore()
+        initalizeNavigationBarItems()
         //Opcional
         presenter?.getInitialInfo()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationItem.setHidesBackButton(true, animated: true)
+
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationItem.setHidesBackButton(false, animated: true)
+    }
+    /// Función para asignar botón al navigationBar
+    private func initalizeNavigationBarItems() {
+        let profileBarButtonView = ImageBarButton(withImage: #imageLiteral(resourceName: "user"))
+        profileBarButtonView.button.addTarget(self, action: #selector(goToProfile), for: .touchUpInside)
+        navigationItem.rightBarButtonItems = [profileBarButtonView.load()]
+    }
+    @objc func presentMoreViewController(_ sender: Any) {
+        // present MoreViewController
+    }
+    
+    func setUpFirestore() {
+ 
+    }
+    func testFirestore() {
+//        let signUpManager = FirebaseAuthManager()
+        
+//        if let email = emailTextField.text, let password = passwordTextField.text {
+//        guard let email = contactPointTextField.text, let password = passwordTextField.text else { return }
+//        signUpManager.signIn(email: email, pass: password) {[weak self] (success) in
+//          self?.showPopup(isSuccess: success)
+//        }
+//        
+        
+//        signUpManager.createUser(email: "jbelu1112@gmail.com", password: "pruebaPrueba") { [weak self] (success, alertMessage) in
+//            guard let `self` = self else { return }
+//            let alertController = UIAlertController(title: nil, message: alertMessage, preferredStyle: .alert)
+//            alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+//            self.display(alertController: alertController)
+//        }
+        
+//        }
+            
+        // Add a new document with a generated ID
+        // Add a second document with a generated ID.
+//      db.collection("users").getDocuments() { (querySnapshot, err) in
+//            if let err = err {
+//                print("Error getting documents: \(err)")
+//            } else {
+//                let users = querySnapshot!.documents
+//                try! users.forEach { user in
+//                    let myUser: UserFirestore = try user.decodedUsers()
+//                    print(myUser.id)
+//                }
+//            }
+//        }
+    }
+    func display(alertController: UIAlertController) {
+        self.present(alertController, animated: true, completion: nil)
     }
     /// Función para darle formato a la vista
     func setUpView() {
@@ -50,7 +115,12 @@ class DBHomeVC: UIViewController {
         btnShipping.layer.borderWidth = 1
         btnShipping.layer.borderColor = UIColor.black.cgColor
     }
-    
+}
+extension DBHomeVC {
+    /// Función para ver el detalle del perfil.
+    @objc func goToProfile() {
+        presenter?.goToProfile()
+    }
     /// Acción para movernos a la pantalla de ventas.
     /// - Parameter sender: contiene la información del botón que se pulso
     @IBAction func goToSales(_ sender: UIButton) {
@@ -77,9 +147,10 @@ class DBHomeVC: UIViewController {
         presenter?.goToShipping()
     }
 }
+
 ///Protocolo para recibir datos de presenter.
 extension DBHomeVC: DBHomeViewProtocol {
-    func loadInfo(){
+    func loadInfo() {
         print("Realizar acciones de repintado de la vista")
     }
 }

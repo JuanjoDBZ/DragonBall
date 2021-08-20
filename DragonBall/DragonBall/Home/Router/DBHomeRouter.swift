@@ -32,20 +32,28 @@ extension DBHomeRouter: DBHomeRouterProtocol {
         newView.showView()
     }*/
     func goToSales() {
-//        let requestInformationVC = RequestInformationRouter().view
-        //        self.view.navigationController?.pushViewController(requestInformationVC, animated: true)
+        let salesViewController = DBSalesRouter().view
+        self.view.navigationController?.pushViewController(salesViewController, animated: true)
     }
     func goToReferral() {
-        
+        let referralViewController = DBReferralRouter().view
+        self.view.navigationController?.pushViewController(referralViewController, animated: true)
     }
     func goToWarehouse() {
-        
+        let warehouseViewController = DBWarehouseRouter().view
+        self.view.navigationController?.pushViewController(warehouseViewController, animated: true)
     }
     func goToQuotation() {
-        
+        let quotationViewController = DBQuotationRouter().view
+        self.view.navigationController?.pushViewController(quotationViewController, animated: true)
     }
     func goToShipping() {
-        
+        let shippingViewController = DBShippingRouter().view
+        self.view.navigationController?.pushViewController(shippingViewController, animated: true)
+    }
+    func goToProfile() {
+        let profileViewController = DBProfileRouter().view
+        self.view.navigationController?.pushViewController(profileViewController, animated: true)
     }
 }
 

@@ -17,6 +17,12 @@ class DBReferralVC: UIViewController {
         super.viewDidLoad()
         //Opcional
         presenter?.getInitialInfo()
+        setUpView()
+    }
+    func setUpView() {
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
+        navigationController?.navigationBar.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        title = "R E M I S I Ó N"
     }
 }
 ///Protocolo para recibir datos de presenter.

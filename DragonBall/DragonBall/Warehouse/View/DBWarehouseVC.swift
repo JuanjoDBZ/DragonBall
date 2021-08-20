@@ -17,7 +17,14 @@ class DBWarehouseVC: UIViewController {
         super.viewDidLoad()
         //Opcional
         presenter?.getInitialInfo()
+        setUpView()
     }
+    func setUpView() {
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
+        navigationController?.navigationBar.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        title = "A L M A C É N"
+    }
+
 }
 ///Protocolo para recibir datos de presenter.
 extension DBWarehouseVC: DBWarehouseViewProtocol {

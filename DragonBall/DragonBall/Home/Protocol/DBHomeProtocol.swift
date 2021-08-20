@@ -22,6 +22,7 @@ protocol DBHomeRouterProtocol {
     func goToWarehouse()
     func goToQuotation()
     func goToShipping()
+    func goToProfile()
 }
 /// Protocolo que define los métodos y atributos para el Presenter de DBHome
 protocol DBHomePresenterProtocol {
@@ -32,6 +33,7 @@ protocol DBHomePresenterProtocol {
     func goToWarehouse()
     func goToQuotation()
     func goToShipping()
+    func goToProfile()
 }
 /// Protocolo que define los métodos y atributos para el Interactor de DBHome
 protocol DBHomeInteractorInputProtocol {

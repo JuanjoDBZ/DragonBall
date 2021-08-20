@@ -35,6 +35,9 @@ extension DBHomePresenter: DBHomePresenterProtocol {
     func goToShipping() {
         router?.goToShipping()
     }
+    func goToProfile() {
+        router?.goToProfile()
+    }
 }
 extension DBHomePresenter: DBHomeInteractorOutputProtocol {
     //Uso y nombre opcional
