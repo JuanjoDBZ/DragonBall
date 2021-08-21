@@ -21,6 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 window?.windowScene = windowScene
                 let login = DBLandingScreenRouter()
         let navigationController = UINavigationController(rootViewController: login.view)
+        
                 navigationController.modalPresentationStyle = .fullScreen
                 window?.rootViewController = navigationController
                 window?.makeKeyAndVisible()
